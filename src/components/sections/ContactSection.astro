@@ -18,7 +18,10 @@ const formSubTitle: string =
 ---
 
 <!-- Contact Us -->
-<section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+<section
+  id="contact-form"
+  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14"
+>
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="text-center">
       <h1
@@ -78,7 +81,7 @@ const formSubTitle: string =
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Visitez notre bureau"
+          heading="Nous rendre visite à notre studio"
           content="Studio Web Crafters"
           isAddressVisible={true}
           addressContent="10 Avenue Anita Conti, 35400 Saint-Malo"
@@ -100,15 +103,6 @@ const formSubTitle: string =
           linkTitle="contact@web-crafters.studio"
           linkURL="mailto:contact@web-crafters.studio"
           ><Icon name="envelopeOpen" />
-        </ContactIconBlock>
-        <ContactIconBlock
-          heading="FAQ"
-          content="Explorez notre FAQ pour des réponses rapides et claires aux questions courantes."
-          isLinkVisible={true}
-          linkTitle="Visiter la FAQ"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="chatBubble" />
         </ContactIconBlock>
       </div>
     </div>

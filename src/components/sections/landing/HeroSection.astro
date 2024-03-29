@@ -1,9 +1,7 @@
 ---
 // Import the necessary dependencies
-import { Image } from "astro:assets";
 import PrimaryCTA from "../../ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "../../ui/buttons/SecondaryCTA.astro";
-import ReviewComponent from "../../ui/blocks/ReviewComponent.astro";
 
 // Define props from Astro
 const {
@@ -69,20 +67,6 @@ interface Props {
         )
       }
     </div>
-
-    <!-- Review Section: This section presents avatars, review ratings and the number of reviews -->
-    {
-      withReview ? (
-        <ReviewComponent
-          avatars={avatars}
-          starCount={starCount}
-          rating={rating}
-          reviews={reviews}
-        />
-      ) : (
-        ""
-      )
-    }
   </div>
   <!-- Hero Image Section -->
   <div class="flex w-full">

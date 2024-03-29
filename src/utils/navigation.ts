@@ -1,17 +1,22 @@
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Notre entreprise",
+    section: "Expertises",
     links: [
-      { name: "Expertises", url: "/services" },
-      { name: "Nous contacter", url: "/contact" },
+      { name: "Accompagnement stratégique", url: "/" },
+      { name: "Web Design (UX/UI)", url: "/" },
+      { name: "Développement web", url: "/" },
+      { name: "Référencement naturel", url: "/" },
     ],
   },
   {
     section: "Legal",
     links: [
       { name: "Mentions Légales", url: "/mentions-legales" },
-      { name: "Politique de confidentialité", url: "/politique-confidentialite" },
+      {
+        name: "Politique de confidentialité",
+        url: "/politique-confidentialite",
+      },
     ],
   },
 ];

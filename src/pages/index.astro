@@ -10,6 +10,7 @@ import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
 import LeftSection from "@/components/ui/blocks/LeftSection.astro";
 import RightSection from "@/components/ui/blocks/RightSection.astro";
+import ContactSection from "@/components/sections/ContactSection.astro";
 
 interface Article {
   isRightSection: boolean;
@@ -70,20 +71,6 @@ const articles: Article[] = [
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
-  {
-    isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
-    subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
-    single: false,
-    imgOne: "/images/strat.jpg",
-    imgOneAlt: "In progress building structure",
-    imgTwo: "/images/strat.jpg",
-    imgTwoAlt: "Brown and gray building under construction",
-    btnExists: true,
-    btnTitle: "Read more",
-    btnURL: "#",
-  },
 ];
 ---
 
@@ -93,9 +80,9 @@ const articles: Article[] = [
         class="text-yellow-500 dark:text-yellow-400">Studio Web Crafters</span>`
     subTitle="Des solutions web sur-mesure pour propulser votre entreprise vers de nouveaux horizons."
     primaryBtn="Contactez-nous"
-    primaryBtnURL="/contact"
+    primaryBtnURL="#contact-form"
     secondaryBtn="Découvrez nos services"
-    secondaryBtnURL="/services"
+    secondaryBtnURL="#services"
     withReview={false}
     src="/images/projet_de creation-site-web.jpg"
     alt="Photo de Alvaro Reyes sur Unsplash"
@@ -152,9 +139,14 @@ const articles: Article[] = [
       },
     ]}
   />
-
+  <HeroSectionAlt
+  title="Prêt à donner vie à votre projet web ?"
+  subTitle=" Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
+  url="mailto:contact@web-crafters.studio"
+  btnTitle="Planifier ma réunion de lancement"
+/>
   {
-    articles.map(article => {
+    articles.map((article) => {
       return article.isRightSection ? (
         <RightSection
           title={article.title}
@@ -195,8 +187,8 @@ const articles: Article[] = [
     url="mailto:contact@web-crafters.studio"
     btnTitle="Planifier Ma Réunion de lancement"
   />
-
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <FAQ title="FAQ" faqs={faqs} />
+  <ContactSection />
 
   
 </MainLayout>

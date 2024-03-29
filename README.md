@@ -155,7 +155,7 @@ export const navBarLinks: NavLink[] = [
   { name: "Products", url: "/products" },
   { name: "Services", url: "/services" },
   { name: "Blog", url: "/blog" },
-  { name: "Contact", url: "/contact" },
+  { name: "Contact", url: "#contact" },
 ];
 ```
 
