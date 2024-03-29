@@ -1,6 +1,3 @@
-// An array of links for navigation bar
-const navBarLinks = [
-];
 // An array of links for footer
 const footerLinks = [
   {
@@ -29,7 +26,6 @@ const socialLinks = {
 };
 
 export default {
-  navBarLinks,
   footerLinks,
   socialLinks,
 };

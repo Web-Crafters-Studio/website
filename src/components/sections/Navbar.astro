@@ -83,10 +83,6 @@ const homeUrl = "/";
       <div
         class="mt-5 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-7 md:gap-y-0 md:ps-7 md:py-2"
       >
-        <!-- Navigation links and Authentication component -->
-        {strings.navBarLinks.map(link => (
-          <NavLink url={link.url} name={link.name} />
-        ))}
         <PrimaryCTA title="Contactez-nous" url="#contact-from"></PrimaryCTA>
         <!-- ThemeIcon component specifically for larger screens -->
         <span class="hidden md:inline-block">
