@@ -13,8 +13,11 @@ import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
 import featureImage from "@/images/reunion-strategie.jpg";
 import construction from "@/images/construction-image.avif";
-import tools from "@/images/automated-tools.avif";
 import web from "@/images/web-design.jpg";
+import dev from "@/images/dev.jpg";
+import seo from "@/images/seo.jpg";
+import strategie from "@/images/strat.jpg";
+import support from "@/images/support.jpg";
 ---
 
 <MainLayout>
@@ -31,19 +34,6 @@ import web from "@/images/web-design.jpg";
     alt="Photo de Alvaro Reyes sur Unsplash"
   />
 
-  <ClientsSection
-    title="Ils nous font confiance"
-    subTitle="Notre accompagnement sur-mesure et notre expertise les ont conquis alors pourquoi pas vous ?"
-  />
-
-  <FeaturesGeneral
-    title="Des solutions web personnalisées"
-    subTitle="Chez Web Crafters, nous avons à coeur de vous proposer des solutions adaptées à votre contexte et vos objectifs. Que vous soyez une startup innovante, une TPE ou une PME en pleine croissance, notre équipe experte est là pour vous accompagner à chaque étape de votre projet."
-    src={featureImage}
-    alt="ScrewFast products in floating boxes"
-    features={features}
-  />
-
   <FeaturesNavs
     title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
     tabs={[
@@ -52,7 +42,7 @@ import web from "@/images/web-design.jpg";
         content:
           "Du référencement SEO à la gestion de vos réseaux sociaux, nous élaborons les stratégies qui augmentent votre visibilité en ligne.",
         svg: "strategy",
-        src: tools,
+        src: strategie,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
@@ -69,7 +59,7 @@ import web from "@/images/web-design.jpg";
         content:
           "Sites vitrine, e-commerce, applications web... nos créations sont optimisées pour un référencement, une responsivité, une accessibilité et une performance maximale.",
         svg: "tools",
-        src: tools,
+        src: dev,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
       },
       {
@@ -77,7 +67,7 @@ import web from "@/images/web-design.jpg";
         content:
           "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
         svg: "house",
-        src: construction,
+        src: seo,
         alt: "Gray metal building frame near tower crane during daytime",
       },
       {
@@ -85,10 +75,24 @@ import web from "@/images/web-design.jpg";
         content:
           "Nous sommes à vos côtés pour garantir le bon fonctionnement de vos solutions numériques au quotidien. Nous proposons tous les niveaux de maintenance : préventives, correctives et évolutives",
         svg: "maintenance",
-        src: construction,
+        src: support,
         alt: "Gray metal building frame near tower crane during daytime",
       },
     ]}
+  />
+
+  <FeaturesGeneral
+    title="Nos valeurs"
+    subTitle="Chez Web Crafters, nous avons à coeur de vous proposer des solutions adaptées à votre contexte et vos objectifs. Que vous soyez une startup innovante, une TPE ou une PME en pleine croissance, notre équipe experte est là pour vous accompagner à chaque étape de votre projet."
+    alt="Les valeurs du studio web crafters"
+    features={features}
+  />
+
+  <HeroSectionAlt
+    title="Prêt à donner vie à votre projet web ?"
+    subTitle=" Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
+    url="mailto:contact@web-crafters.studio"
+    btnTitle="Planifier Ma Réunion de lancement"
   />
 
   <TestimonialsSection
@@ -102,39 +106,10 @@ import web from "@/images/web-design.jpg";
         author: "Pierre Besse",
         role: "Digireant | HéOTi Energies",
         avatarSrc:
-          "https://media.licdn.com/dms/image/D4D03AQFLRtpKYfLH4w/profile-displayphoto-shrink_800_800/0/1686476178516?e=1717027200&v=beta&t=2HxnH4hjAURaknjI3sHlh5r8A-UAETPdXOyznpqaufA",
-      },
-    ]}
-    statistics={[
-      {
-        count: "Proximité",
-        description:
-          "Basés à Saint-Malo, nous cultivons une approche de proximité avec nos clients, pour des projets qui vous ressemblent vraiment.",
-      },
-      {
-        count: "Expertise",
-        description:
-          "Notre équipe est et reste à la pointe des technologies web pour vous offrir des solutions avant-gardistes.",
-      },
-      {
-        count: "Sur-mesure",
-        description:
-          "Obtenez des résultats tangibles grâce à des analyses approfondies de votre marché",
-      },
-      {
-        count: "Satisfaction Client",
-        description:
-          "Votre succès est notre priorité. Nous nous engageons à fournir un service de qualité, transparent et réactif.",
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
       },
     ]}
   />
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
-
-  <HeroSectionAlt
-    title="Prêt à donner vie à votre projet web ?"
-    subTitle=" Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
-    url="mailto:contact@web-crafters.studio"
-    btnTitle="Planifier Ma Réunion de lancement"
-  />
 </MainLayout>
