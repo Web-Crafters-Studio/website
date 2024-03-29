@@ -2,11 +2,11 @@ import ogImageSrc from "@/images/social.png";
 
 export const SITE = {
   title: "Studio Web Crafters",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  tagline: "Conception de site internet sur-mesure",
+  description: "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet. Contactez notre équipe d'expert pour convenir d'une réunion de lancement.",
+  description_short: "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet.",
+  url: "https://web-crafters.studio",
+  author: "Nicolas TOISON",
 };
 
 export const SEO = {
@@ -15,7 +15,7 @@ export const SEO = {
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    inLanguage: "en-US",
+    inLanguage: "fr-Fr",
     "@id": SITE.url,
     url: SITE.url,
     name: SITE.title,
@@ -30,7 +30,7 @@ export const SEO = {
 };
 
 export const OG = {
-  locale: "en_US",
+  locale: "fr_FR",
   type: "website",
   url: SITE.url,
   title: `${SITE.title}: : Hardware Tools & Construction Services`,

@@ -78,16 +78,9 @@ interface Props {
   </div>
   <!-- Hero Image Section -->
   <div class="flex w-full">
-      <div class="top-12 overflow-hidden">
+      <div class="top-12 overflow-hidden rounded-xl">
 	{src && alt &&
-	<Image
-        src={src}
-        alt={alt}
-        class="h-full w-full scale-110 object-cover object-center"
-        draggable={"false"}
-        loading={"eager"}
-        format={"avif"}
-	 />
+   <img src={src} alt={alt} class="h-full w-full scale-110 object-cover object-center" loading="eager"
 	}
     </div>
   </div>
