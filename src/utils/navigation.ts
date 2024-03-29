@@ -17,10 +17,9 @@ const footerLinks = [
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "#",
+  facebook: "https://www.facebook.com/studiowebcrafters/",
   x: "https://twitter.com/web_crafters35",
   github: "https://github.com/Web-Crafters-Studio",
-  google: "#",
   slack: "#",
   discord: "#",
 };

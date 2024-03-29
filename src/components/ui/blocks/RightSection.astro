@@ -1,6 +1,5 @@
 ---
 // Import the required modules
-import { Image } from "astro:assets";
 import PrimaryCTA from "../buttons/PrimaryCTA.astro";
 // Extract properties from Astro.props
 const {
@@ -23,10 +22,10 @@ interface Props {
   btnTitle?: string;
   btnURL?: string;
   single?: boolean;
-  imgOne?: any;
-  imgOneAlt?: any;
-  imgTwo?: any;
-  imgTwoAlt?: any;
+  imgOne?: string;
+  imgOneAlt?: string;
+  imgTwo?: string;
+  imgTwoAlt?: string;
 }
 ---
 <!-- Root section of the component -->
@@ -54,31 +53,14 @@ interface Props {
     single ? (
       <div class="mt-8">
         <!-- Single image -->
-        <Image
-          class="w-full rounded-lg"
-          src={imgOne}
-          alt={imgOneAlt}
-          format={"avif"}
-        />
+        <img src={imgOne} alt={imgOneAlt} width="100px" height="100px" class="w-full rounded-lg"/>
       </div>
     ) : (
       <div class="mt-8 grid grid-cols-2 gap-4">
         <!-- First image in a two-image layout -->
-        <Image
-          class="w-full rounded-xl"
-          src={imgOne}
-          alt={imgOneAlt}
-          draggable={"false"}
-          format={"avif"}
-        />
+        <img src={imgOne} alt={imgOneAlt} width="100px" height="100px" class="w-full rounded-lg"/>
         <!-- Second image in a two-image layout -->
-        <Image
-          class="mt-4 w-full rounded-xl lg:mt-10"
-          src={imgTwo}
-          alt={imgTwoAlt}
-          draggable={"false"}
-          format={"avif"}
-        />
+        <img src={imgTwo} alt={imgTwoAlt} width="100px" height="100px" class="mt-4 w-full rounded-xl lg:mt-10"/>
       </div>
     )
   }
