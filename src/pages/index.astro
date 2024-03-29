@@ -7,26 +7,17 @@ import ClientsSection from "@/components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@/components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@/components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@/components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "@/components/sections/pricing/PricingSection.astro";
 import FAQ from "@/components/sections/FAQ.astro";
-import AnnouncementBanner from "@/components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@/images/hero-image.avif";
+import heroImage from "@/images/projet_de creation-site-web.jpg";
 import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
-import pricing from "@/data_files/pricing.json";
-import featureImage from "@/images/features-image.avif";
+import featureImage from "@/images/reunion-strategie.jpg";
 import construction from "@/images/construction-image.avif";
 import tools from "@/images/automated-tools.avif";
-import dashboard from "@/images/dashboard-image.avif";
+import web from "@/images/web-design.jpg";
 ---
 
 <MainLayout>
-  <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
-
   <HeroSection
     title=`Donnez vie à vos projets numériques avec le <span
         class="text-yellow-500 dark:text-yellow-400">Studio Web Crafters</span>`
@@ -37,12 +28,12 @@ import dashboard from "@/images/dashboard-image.avif";
     secondaryBtnURL="/services"
     withReview={false}
     src={heroImage}
-    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+    alt="Photo de Alvaro Reyes sur Unsplash"
   />
 
   <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+    title="Ils nous font confiance"
+    subTitle="Notre accompagnement sur-mesure et notre expertise les ont conquis alors pourquoi pas vous ?"
   />
 
   <FeaturesGeneral
@@ -57,28 +48,43 @@ import dashboard from "@/images/dashboard-image.avif";
     title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Stratégie Numérique",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
+          "Du référencement SEO à la gestion de vos réseaux sociaux, nous élaborons les stratégies qui augmentent votre visibilité en ligne.",
+        svg: "strategy",
         src: tools,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Design UI/UX",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
+          "Nous concevons des interfaces attractives et intuitives pour une expérience utilisateur sans faille.",
+        svg: "design",
+        src: web,
+        alt: "Photo de Balázs Kétyi Unsplash",
       },
       {
-        heading: "Robust Features",
+        heading: "Développement Web sur Mesure",
+        content:
+          "Sites vitrine, e-commerce, applications web... nos créations sont optimisées pour un référencement, une responsivité, une accessibilité et une performance maximale.",
+        svg: "tools",
+        src: tools,
+        alt: "A screenshot or graphic representation of the intuitive dashboard",
+      },
+      {
+        heading: "Référencement naturel (SEO)",
         content:
           "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
         svg: "house",
+        src: construction,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+      {
+        heading: "Maintenance et Support : ",
+        content:
+          "Nous sommes à vos côtés pour garantir le bon fonctionnement de vos solutions numériques au quotidien. Nous proposons tous les niveaux de maintenance : préventives, correctives et évolutives",
+        svg: "maintenance",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
       },
@@ -86,49 +92,49 @@ import dashboard from "@/images/dashboard-image.avif";
   />
 
   <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
+    title="Confiez nous votre projet"
+    subTitle="Chez Web Crafters, nous avons à coeur de vous accompagner comme si votre entreprise était la notre."
     ;
     testimonials={[
       {
         content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
+          "Web Crafters m'a accompagné pour établir la visibilité de mon entreprise. Je suis satisfait du travail effectué et j'ai apprécié collaborer avec le studio Web Crafters. Ils ont su nous proposer une solution adéquate et aujourd'hui nous en récoltons les fruits car notre site internet est notre canal d'acquisition principal",
+        author: "Pierre Besse",
+        role: "Digireant | HéOTi Energies",
         avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+          "https://media.licdn.com/dms/image/D4D03AQFLRtpKYfLH4w/profile-displayphoto-shrink_800_800/0/1686476178516?e=1717027200&v=beta&t=2HxnH4hjAURaknjI3sHlh5r8A-UAETPdXOyznpqaufA",
       },
     ]}
     statistics={[
       {
-        count: "70k+",
+        count: "Proximité",
         description:
-          "customers equipped — from DIY to major construction firms",
+          "Basés à Saint-Malo, nous cultivons une approche de proximité avec nos clients, pour des projets qui vous ressemblent vraiment.",
       },
       {
-        count: "35%",
+        count: "Expertise",
         description:
-          "uptick in project efficiency with ScrewFast tools and services",
+          "Notre équipe est et reste à la pointe des technologies web pour vous offrir des solutions avant-gardistes.",
       },
       {
-        count: "15.3%",
+        count: "Sur-mesure",
         description:
-          "reduction in maintenance costs reported by long-term clients",
+          "Obtenez des résultats tangibles grâce à des analyses approfondies de votre marché",
       },
       {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
+        count: "Satisfaction Client",
+        description:
+          "Votre succès est notre priorité. Nous nous engageons à fournir un service de qualité, transparent et réactif.",
       },
     ]}
   />
 
-  <PricingSection pricing={pricing} />
-
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="Prêt à donner vie à votre projet web ?"
+    subTitle=" Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
+    url="mailto:contact@web-crafters.studio"
+    btnTitle="Planifier Ma Réunion de lancement"
   />
 </MainLayout>
