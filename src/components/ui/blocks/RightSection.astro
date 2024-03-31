@@ -3,6 +3,7 @@
 import PrimaryCTA from "../buttons/PrimaryCTA.astro";
 // Extract properties from Astro.props
 const {
+  id,
   title,
   subTitle,
   btnExists,
@@ -16,6 +17,7 @@ const {
 } = Astro.props;
 // Define TypeScript interface for the properties
 interface Props {
+  id: string;
   title: string;
   subTitle: string;
   btnExists?: boolean;
@@ -29,7 +31,7 @@ interface Props {
 }
 ---
 <!-- Root section of the component -->
-<section
+<section id={id}
   class="mx-auto max-w-[85rem] items-center gap-16 px-4 py-10 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8 lg:py-14 2xl:max-w-full"
 >
   <div>
@@ -43,7 +45,7 @@ interface Props {
     <p
       class="mb-4 max-w-prose text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
     >
-      {subTitle}
+    <Fragment set:html={subTitle} />
     </p>
     <!-- Conditional rendering of the Primary Call-To-Action button if 'btnExists' is true -->
     {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}

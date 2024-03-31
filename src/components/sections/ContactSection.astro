@@ -11,10 +11,10 @@ import Icon from "../ui/icons/Icon.astro";
 // Define the variables that will be used in this component
 const title: string = "Contactez-nous";
 const subTitle: string =
-  "Vous avez des questions ou souhaitez discuter d'un projet ? Contactez-nous et laissons-nous élaborer la solution parfaite avec nos outils et services.";
+  "Vous avez des questions ou souhaitez discuter d'un projet ? Contactez-nous et laissez-nous élaborer la solution parfaite pour vous.";
 const formTitle: string = "Remplissez le formulaire ci-dessous";
 const formSubTitle: string =
-  "Nous vous répondrons dans un délai de 1 à 2 jours ouvrables.";
+  "Nous vous répondrons dans un délai de 1 j ouvrables.";
 ---
 
 <!-- Contact Us -->
@@ -24,11 +24,11 @@ const formSubTitle: string =
 >
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="text-center">
-      <h1
+      <h2
         class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
       >
         {title}
-      </h1>
+      </h2>
       <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
         {subTitle}
       </p>
@@ -83,8 +83,10 @@ const formSubTitle: string =
         <ContactIconBlock
           heading="Nous rendre visite à notre studio"
           content="Studio Web Crafters"
-          isAddressVisible={true}
-          addressContent="10 Avenue Anita Conti, 35400 Saint-Malo"
+          isLinkVisible={true}
+          isArrowVisible={true}
+          linkTitle="Google Maps"
+          linkURL="https://maps.app.goo.gl/Y4HbYrbq3qHK7W4w9"
           ><Icon name="mapPin" />
         </ContactIconBlock>
         <ContactIconBlock
@@ -102,6 +104,7 @@ const formSubTitle: string =
           isLinkVisible={true}
           linkTitle="contact@web-crafters.studio"
           linkURL="mailto:contact@web-crafters.studio"
+          isArrowVisible={true}
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
       </div>

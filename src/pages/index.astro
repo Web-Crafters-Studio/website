@@ -11,9 +11,11 @@ import features from "@/data_files/features.json";
 import LeftSection from "@/components/ui/blocks/LeftSection.astro";
 import RightSection from "@/components/ui/blocks/RightSection.astro";
 import ContactSection from "@/components/sections/ContactSection.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
 
 interface Article {
   isRightSection: boolean;
+  id: string;
   title: string;
   subTitle: string;
   btnExists?: boolean;
@@ -30,56 +32,81 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "strategie-numerique",
     isRightSection: true,
-    title: "Delivering Expert Guidance",
-    subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
-    single: false,
+    title: "Élaboration de votre stratégie numérique",
+    subTitle: `Définir votre stratégie numérique est <span
+        class="font-bold">primordiale</span> pour définir la meilleure solution à vos besoin et d'aligner cette solution à vos objectifs commerciaux.<br /><br />
+        Nos experts définissent avec vous une stratégie basée sur l'étude du marché que vous ciblez (<span class="font-bold">analyse approfondie de la concurrence basée sur les moteurs de recherche, analyse et description de la cible idéale</span>, etc.).<br /><br /> 
+        Tout ceci va nous permetttre de définir des hypothèses et de valider (ou non) ces hypothèses par des expérimentations. Ces expérimentations nous permettent d'<span class="font-bold">apprendre à cerner avec précision le profil de votre cible idéale</span> et de lui proposer uniquement exactement ce qu'elle souhaite<br /><br /> 
+        Le but in fine est de développer une <span class="font-bold">solution numérique constamment optimisée</span> qui contribue directement à <span class="font-bold">atteindre les objectifs commerciaux que vous vous êtes fixés<span>.`,
+    single: true,
     imgOne: "/images/strat.jpg",
     imgOneAlt: "Blueprints and digital tablet with construction plans.",
-    imgTwo: "/images/strat.jpg",
-    imgTwoAlt: "Person working in the office",
+    btnExists: true,
+    btnTitle: "J'élabore ma stratégie numérique",
+    btnURL: "#contact-form",
   },
   {
+    id: "identite-visuelle",
     isRightSection: false,
-    title: "Transforming Designs into Reality",
-    subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+    title: "Création de votre identité visuelle",
+    subTitle: `
+    Dans le monde numérique d'aujourd'hui, l'identité visuelle de votre entreprise est bien plus qu'un simple logo ou une palette de couleurs. Elle est le <span
+        class="font-bold">reflet de votre marque, de vos valeurs et de votre mission</span>.<br /><br />
+    Chez Web Crafters, nous comprenons l'importance cruciale d'une conception UX/UI bien pensée pour les TPE/PME.<br /><br />
+    Notre service exclusif de design UX/UI est conçu pour capturer l'essence de votre entreprise et la communiquer efficacement à votre audience cible sur tous les supports numériques.<br /><br />
+    La première étape consiste à <span class="font-bold">bâtir ou à revitaliser votre identité graphique</span>. Nous plongeons dans l'univers de votre marque pour créer un design qui parle, qui raconte votre histoire, et qui séduit. Notre objectif ? Que votre <span class="font-bold">marque soit reconnaissable au premier coup d'œil, marquante et inspirante</span>.<br /><br />
+    La deuxième étape consiste à l'élaboration de prototypes et de maquettes est au cœur de notre processus de design. Cette étape cruciale permet de <span class="font-bold">visualiser et d'expérimenter l'interaction utilisateur avant le développement final</span>. Nos prototypes sont conçus pour être intuitifs, engageants et faciles à naviguer, assurant ainsi une expérience utilisateur (UX) optimale.<br /><br />
+    `,
     img: "/images/strat.jpg",
     imgAlt: "Construction site before and after",
     btnExists: true,
-    btnTitle: "Learn More",
-    btnURL: "#",
+    btnTitle: "Créer mon identité visuelle",
+    btnURL: "#contact-form",
   },
   {
+    id: "creation-site",
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
-    subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
-    single: false,
+    title: "Création de votre site ou application web",
+    subTitle: `À l'ère du numérique, avoir une présence en ligne n'est plus un luxe, mais une nécessité pour toute entreprise souhaitant se démarquer.<br/><br/> 
+      Chez Web Crafters, nous offrons un service complet de développement de sites et d'applications web, conçu spécifiquement pour répondre à vos besoins uniques et à vos objectifs commerciaux.<br/><br/>
+      <span class="font-bold">Site Vitrine</span> : Votre carte de visite numérique. Un site vitrine bien conçu vous permet de présenter votre entreprise, vos produits et vos services, de communiquer votre valeur ajoutée et d'engager vos visiteurs. Il s'agit de la première étape pour bâtir votre présence en ligne et asseoir votre crédibilité.<br/><br/>
+      <span class="font-bold">Site E-commerce</span> : Ouvrez votre boutique en ligne 24/7. Nous développons des sites e-commerce intuitifs, sécurisés et optimisés pour les conversions. Que vous vendiez un produit unique ou une large gamme d'articles, nous maitrisons les codes du e-commerce et nous concevons la solution adaptée à votre activité pour faire décoller vos ventes en ligne.<br/><br/>
+      <span class="font-bold">Application Web & Mobile</span> : Simplifiez les opérations et améliorez l'expérience utilisateur avec une application web ou mobile personnalisée. De la gestion de projet à la relation client, notre équipe développe des applications web sur mesure qui répondent à vos besoins opérationnels, facilitent vos processus internes et offrent une valeur ajoutée significative à vos utilisateurs.<br /><br />`,
+    single: true,
     imgOne: "/images/strat.jpg",
-    imgOneAlt: "Construction workers orchestrating a project",
-    imgTwo: "/images/strat.jpg",
-    imgTwoAlt: "Aerial view of managed construction",
+    imgOneAlt: "",
+    btnExists: true,
+    btnTitle: "Lancez mon projet web",
+    btnURL: "#contact-form",
   },
   {
+    id: "seo",
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
-    subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+    title: "Amélioration de votre visibilité sur les moteurs de recherche",
+    subTitle: `
+      Le paysage numérique est de plus en plus concurentiel. Être visible sur les moteurs de recherche est donc de plus en plus difficile alors que c'est essentiel pour attirer et retenir l'attention de vos clients potentiels. <br/><br/>
+      Chez Web Crafters, nous l'avons bien compris, c'est pourquoi notre équipe se forme constamment aux bonnes pratiques de l'optimisation pour les moteurs de recherche (SEO)<br/><br/>
+      <span class="font-bold">Optimisation On-Site</span> : Les fondations sur lesquelles repose votre succès en SEO. Nous optimisons votre site web en profondeur, depuis la structure et le contenu jusqu'à la performance technique. Nous veillons à ce que votre site soit non seulement convivial pour les moteurs de recherche, mais aussi et surtout pour vos utilisateurs.<br/><br/>
+      <span class="font-bold">Stratégies Off-Site</span> : Étendez votre influence au-delà de votre site. Notre approche off-site vise à construire et à améliorer la réputation de votre site sur internet. Nous utilisons des techniques éprouvées de création de liens (backlinking) et de marketing de contenu pour augmenter la pertinence et l'autorité de votre site, ce qui se traduit par un meilleur classement dans les résultats de recherche.<br/><br/>
+      <span class="font-bold">Backlinking de Qualité</span> : Les liens sont les voies de la crédibilité sur internet. Nous nous concentrons sur l'obtention de backlinks de haute qualité provenant de sites réputés et pertinents dans votre secteur. Cette stratégie non seulement booste votre SEO, mais génère également du trafic vers votre site.<br/><br/>`,
     img: "/images/strat.jpg",
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+    btnExists: true,
+    btnTitle: "Améliorer ma visibilité en ligne",
+    btnURL: "#contact-form",
   },
 ];
 ---
 
 <MainLayout>
   <HeroSection
-    title=`Donnez vie à vos projets numériques avec le <span
-        class="text-green-700 dark:text-green-400">Studio Web Crafters</span>`
-    subTitle="Des solutions web sur-mesure pour propulser votre entreprise vers de nouveaux horizons."
-    primaryBtn="Contactez-nous"
+    title=`L'agence web malouine <span
+        class="text-green-700 dark:text-green-400">nouvelle génération</span>`
+    subTitle="Nous vous accompagnons dans le développement numérique de votre entreprise."
+    primaryBtn="Planifier un rendez-vous"
     primaryBtnURL="#contact-form"
     secondaryBtn="Découvrez nos services"
     secondaryBtnURL="#services"
@@ -88,67 +115,72 @@ const articles: Article[] = [
     alt="Photo de Alvaro Reyes sur Unsplash"
   />
 
+  <MainSection
+    title="Le studio Web Crafters, la nouvelle agence web à Saint-Malo"
+    subTitle="Notre objectif : transformer vos idées en réalités numériques. Que vous soyez une startup innovante, une TPE ou une PME en pleine croissance, notre équipe experte est là pour créer des solutions web personnalisées qui parlent directement à votre public cible."
+  />
   <FeaturesNavs
-    title=`Customize <span class="text-green-700 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Nos experts <span class="text-green-700 dark:text-yellow-400">Web crafters</span> vous épaule tout au long du cycle de vie de votre projet.`
     tabs={[
       {
-        heading: "Stratégie Numérique",
+        heading: "Stratégie numérique",
         content:
-          "Du référencement SEO à la gestion de vos réseaux sociaux, nous élaborons les stratégies qui augmentent votre visibilité en ligne.",
+          "Parce que partir à l'aventure sans une boussole c'est du suicide, nous élaborons une stratégie sur-mesure qui augmente votre visibilité en ligne.",
         svg: "strategy",
         src: "/images/strat.jpg",
-        alt: "Yellow and black heavy equipment on brown grass field",
+        alt: "Un expert du studio web crafters expliquant la stratégie numérique conçu pour un client lors d'une réunion de restitution avec un client",
         first: true,
         second: true,
       },
       {
         heading: "Design UI/UX",
         content:
-          "Nous concevons des interfaces attractives et intuitives pour une expérience utilisateur sans faille.",
+          "Nos experts UX/UI vous conçoivent une identité graphique remarquable. Basé sur cette identité graphique, ils déclinent des interfaces attractives et intuitives pour une expérience utilisateur optimale.",
         svg: "design",
         src: "/images/web-design.jpg",
-        alt: "Photo de Balázs Kétyi Unsplash",
+        alt: "Photographie d'un écran d'ordinateur affichant un exemple d'identité graphique conçu par les designers UX/UI du studio Web Crafters - Une photo de Balázs Kétyi Unsplash",
         second: true,
       },
       {
-        heading: "Développement Web sur Mesure",
+        heading: "Développement web sur-mesure",
         content:
-          "Sites vitrine, e-commerce, applications web... nos créations sont optimisées pour un référencement, une responsivité, une accessibilité et une performance maximale.",
+          "Sites vitrine, e-commerce, applications web & mobile... nos créations sont testées et optimisées pour un référencement, une responsivité, une accessibilité et une performance maximale.",
         svg: "tools",
         src: "/images/dev.jpg",
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
+        alt: "Photographie d'un écran d'ordinateur montrant un éditeur de code juxtaposé à un exemple de site web développé par notre équipe de développement",
         second: true,
       },
       {
         heading: "Référencement naturel (SEO)",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "Nos experts SEO surveille votre classement sur les moteurs de recherche et actionnent les leviers nécessaires pour optimiser votre positionnement.",
         svg: "seo",
         src: "/images/seo.jpg",
-        alt: "Gray metal building frame near tower crane during daytime",
+        alt: "Photographie d'un homme tapant à l'ordinateur",
         second: true,
       },
       {
-        heading: "Maintenance et Support : ",
+        heading: "Maintenance et support",
         content:
-          "Nous sommes à vos côtés pour garantir le bon fonctionnement de vos solutions numériques au quotidien. Nous proposons tous les niveaux de maintenance : préventives, correctives et évolutives",
+          "Nous garantissont le bon fonctionnement de vos solutions numériques au quotidien. Nous proposons tous les niveaux de maintenance : préventives, correctives et évolutives",
         svg: "maintenance",
         src: "/images/support.jpg",
-        alt: "Gray metal building frame near tower crane during daytime",
+        alt: "Photographie d'un homme membre de l'équipe support web crafters en train de réaliser une intervention de maintenance sur un site web développé par le studio Web Crafters",
         second: true,
       },
     ]}
   />
   <HeroSectionAlt
-  title="Prêt à donner vie à votre projet web ?"
-  subTitle=" Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
-  url="mailto:contact@web-crafters.studio"
-  btnTitle="Planifier ma réunion de lancement"
-/>
+    title="Prêt à donner vie à votre projet web ?"
+    subTitle="Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
+    url="#contact-form"
+    btnTitle="Planifier ma réunion de lancement"
+  />
   {
     articles.map((article) => {
       return article.isRightSection ? (
         <RightSection
+          id={article.id}
           title={article.title}
           subTitle={article.subTitle}
           single={article.single}
@@ -162,6 +194,7 @@ const articles: Article[] = [
         />
       ) : (
         <LeftSection
+          id={article.id}
           title={article.title}
           subTitle={article.subTitle}
           img={article.img}
@@ -175,7 +208,7 @@ const articles: Article[] = [
   }
 
   <FeaturesGeneral
-    title="Nos valeurs"
+    title="Les valeurs"
     subTitle="Chez Web Crafters, nous avons à coeur de vous proposer des solutions adaptées à votre contexte et vos objectifs. Que vous soyez une startup innovante, une TPE ou une PME en pleine croissance, notre équipe experte est là pour vous accompagner à chaque étape de votre projet."
     alt="Les valeurs du studio web crafters"
     features={features}
@@ -184,11 +217,9 @@ const articles: Article[] = [
   <HeroSectionAlt
     title="Prêt à donner vie à votre projet web ?"
     subTitle=" Commencez par le premier pas : une réunion de lancement avec notre équipe. C'est l'occasion parfaite pour nous de plonger dans votre vision, comprendre vos objectifs et poser les fondations d'une collaboration fructueuse."
-    url="mailto:contact@web-crafters.studio"
-    btnTitle="Planifier Ma Réunion de lancement"
+    url="#contact-form"
+    btnTitle="Planifier ma réunion de lancement"
   />
   <FAQ title="FAQ" faqs={faqs} />
   <ContactSection />
-
-  
 </MainLayout>

@@ -3,10 +3,10 @@ const footerLinks = [
   {
     section: "Expertises",
     links: [
-      { name: "Accompagnement stratégique", url: "/" },
-      { name: "Web Design (UX/UI)", url: "/" },
-      { name: "Développement web", url: "/" },
-      { name: "Référencement naturel", url: "/" },
+      { name: "Stratégie numérique", url: "#strategie-numerique" },
+      { name: "Web design (UX/UI)", url: "#identite-visuelle" },
+      { name: "Création site web", url: "#creation-site" },
+      { name: "Référencement naturel (SEO)", url: "#seo" },
     ],
   },
   {

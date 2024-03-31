@@ -1,7 +1,6 @@
 ---
 // Import the necessary dependencies
 import FooterSocialLink from "../ui/links/FooterSocialLink.astro";
-import EmailFooterInput from "../ui/forms/input/EmailFooterInput.astro";
 import frStrings from "@/utils/navigation.ts";
 import Icon from "../ui/icons/Icon.astro";
 import { SITE } from "@/data_files/constants";
@@ -10,8 +9,8 @@ import { SITE } from "@/data_files/constants";
 const strings = frStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = "Rester à jour";
-const sectionThreeContent: string = "Restez informé des derniers outils et des offres exclusives." 
+const sectionThreeTitle: string = "Nos horaires d'ouverture";
+const sectionThreeContent: string = "Du lundi au vendredi de 9h30 à 18h";
 const crafted: string = "Fabriqué par";
 const homeUrl = "/";
 ---
@@ -24,12 +23,12 @@ const homeUrl = "/";
       <div class="col-span-full lg:col-span-1">
         <!-- Brand Logo -->
         <a
-        class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:text-white  dark:ring-zinc-200 dark:focus:outline-none"
-        href={homeUrl}
-        aria-label="Brand"
-      >
-        Web Crafters Studio
-      </a>
+          class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:text-white dark:ring-zinc-200 dark:focus:outline-none"
+          href={homeUrl}
+          aria-label="Brand"
+        >
+          Web Crafters Studio
+        </a>
       </div>
       <!-- An array of links for Product and Company sections -->
       {
@@ -63,13 +62,9 @@ const homeUrl = "/";
         <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
           {sectionThreeTitle}
         </h3>
-
-        <form>
-          <EmailFooterInput />
-          <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-            {sectionThreeContent}
-          </p>
-        </form>
+        <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
+          {sectionThreeContent}
+        </p>
       </div>
     </div>
 
@@ -78,7 +73,8 @@ const homeUrl = "/";
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span> {SITE.title}. {crafted}
+          © <span id="current-year"></span>
+          {SITE.title}. {crafted}
           <a
             class="rounded-lg font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
             href="https://web-crafters.studio"
@@ -104,7 +100,6 @@ const homeUrl = "/";
         <FooterSocialLink url={strings.socialLinks.discord}
           ><Icon name="discordFooter" />
         </FooterSocialLink>
-
       </div>
     </div>
 
