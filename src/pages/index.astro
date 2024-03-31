@@ -193,6 +193,7 @@ const articles: Article[] = [
           btnURL={article.btnURL}
         />
       ) : (
+        article.img && article.imgAlt ? (
         <LeftSection
           id={article.id}
           title={article.title}
@@ -202,8 +203,8 @@ const articles: Article[] = [
           btnExists={article.btnExists}
           btnTitle={article.btnTitle}
           btnURL={article.btnURL}
-        />
-      );
+        /> ) : null
+      ); 
     })
   }
 
