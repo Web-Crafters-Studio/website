@@ -307,32 +307,6 @@ Please tailor the GSAP animations within this script to fit your project's look 
 > [!NOTE]
 > We've chosen to keep the integration lean and focused, but GSAP's comprehensive documentation can be referred to for more complex animations: [GSAP Documentation](https://gsap.com/docs/v3/).
 
-### Hiding Scrollbar
-
-To achieve a cleaner and more spacious design, the default scrollbar has been visually removed. While this choice fits the aesthetic goals of the project, it's important to consider that hiding scrollbars can sometimes affect accessibility and user experience. We recommend evaluating this design decision within the context of your user base and their needs.
-
-For those who prefer custom-styled scrollbars, we suggest using the [tailwind-scrollbar](https://adoxography.github.io/tailwind-scrollbar/) plugin, which adds Tailwind CSS utilities for scrollbar styles, allowing for more controlled customization that can also meet accessibility standards.
-
-> [!NOTE]
-> If you wish to return the default scrollbar, you can comment out or remove the following CSS from `src/layouts/MainLayout.astro`:
-
-```html
-<style>
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-</style>
-```
-
-Additionally, update the `<html>` tag to remove the `scrollbar-hide` class, resulting in:
-
-```html
-<html lang="en" class="scroll-pt-16">
-```
 
 ### SEO Configuration
 
