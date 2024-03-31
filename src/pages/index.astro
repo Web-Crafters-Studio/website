@@ -101,7 +101,23 @@ const articles: Article[] = [
 ];
 ---
 
-<MainLayout>
+<!-- Professional Service instead of WebPage https://schema.org/ProfessionalService OR Service https://schema.org/Service -->
+<MainLayout title=""
+structuredData={{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://screwfast.uk/blog",
+  "url": "https://screwfast.uk/blog",
+  "name": "Blog | ScrewFast",
+  "description": "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://screwfast.uk",
+    "name": "ScrewFast",
+    "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+  },
+  "inLanguage": "en-US"
+}}>
   <HeroSection
     title=`L'agence web malouine <span
         class="text-green-700 dark:text-green-400">nouvelle génération</span>`
