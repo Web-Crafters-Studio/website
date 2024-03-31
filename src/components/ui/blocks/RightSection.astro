@@ -55,14 +55,14 @@ interface Props {
     single ? (
       <div class="mt-8">
         <!-- Single image -->
-        <img src={imgOne} alt={imgOneAlt} width="100px" height="100px" class="w-full rounded-lg"/>
+        <img src={imgOne} alt={imgOneAlt} loading="lazy" width="100px" height="100px" class="w-full rounded-lg"/>
       </div>
     ) : (
       <div class="mt-8 grid grid-cols-2 gap-4">
         <!-- First image in a two-image layout -->
-        <img src={imgOne} alt={imgOneAlt} width="100px" height="100px" class="w-full rounded-lg"/>
+        <img src={imgOne} alt={imgOneAlt} loading="lazy" width="100px" height="100px" class="w-full rounded-lg"/>
         <!-- Second image in a two-image layout -->
-        <img src={imgTwo} alt={imgTwoAlt} width="100px" height="100px" class="mt-4 w-full rounded-xl lg:mt-10"/>
+        <img src={imgTwo} alt={imgTwoAlt} loading="lazy" width="100px" height="100px" class="mt-4 w-full rounded-xl lg:mt-10"/>
       </div>
     )
   }
