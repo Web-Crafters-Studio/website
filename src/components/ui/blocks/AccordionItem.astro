@@ -22,12 +22,11 @@ function getAccordionClass(first: boolean = false) {
 ---
 
 <!-- The main container for the accordion item -->
-<div itemscope itemtype="https://schema.org/FAQPage" class={getAccordionClass(first)} id={id}>
+<div class={getAccordionClass(first)} id={id}  itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
   <!-- The accordion button, which toggles the expanded/collapsed state -->
   <button
     class="hs-accordion-toggle group inline-flex w-full items-center justify-between gap-x-3 text-balance rounded-lg pb-3 text-start font-bold text-neutral-800 outline-none ring-zinc-500 transition hover:text-neutral-500 focus-visible:ring dark:text-neutral-200 dark:ring-zinc-200 dark:hover:text-neutral-400 dark:focus:outline-none md:text-lg"
     aria-controls={collapseId}
-    itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
   >
     <span itemprop="name">{question}</span>
     <!-- SVG Icon that is shown when the accordion is NOT active -->
