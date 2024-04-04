@@ -1,29 +1,25 @@
 {
-  "subTitle": "Posez-nous toutes vos questions sur notre marque et nos produits, et obtenez des réponses factuelles.",
+  "subTitle": "Posez-nous toutes vos questions sur nos produits et notre agence, et obtenez des réponses factuelles.",
   "faqs": [
     {
-      "question": "Quels types d'outils sont inclus dans le Kit de Démarrage?",
-      "answer": "Le Kit de Démarrage comprend des outils à main et électriques essentiels pour différents projets de bricolage, notamment des marteaux, des perceuses, des tournevis et une variété de fixations. C'est une sélection soigneusement élaborée pour aider les débutants et les bricoleurs expérimentés à aborder la plupart des tâches d'amélioration de l'habitat."
+      "question": "Pourquoi choisir Web Crafters plutôt qu'une autre agence web ?",
+      "answer": "Choisir une agence web est la garantie de bénéficier d'une expertise professionnelle pour la création ou la refonte de votre site internet. Une agence web vous apporte non seulement des compétences techniques en développement web, mais aussi une expertise en design UX/UI, en référencement SEO, et en marketing numérique. Cela vous assure d'avoir un site non seulement esthétique et fonctionnel, mais aussi optimisé pour les moteurs de recherche et adapté à vos objectifs commerciaux. De plus, travailler avec une agence vous permet de vous concentrer sur votre cœur de métier pendant que des experts s'occupent de votre présence en ligne."
     },
     {
-      "question": "Puis-je passer du Kit de Démarrage à la Boîte à Outils Professionnelle?",
-      "answer": "Absolument ! Vous pouvez passer à la Boîte à Outils Professionnelle à tout moment pour accéder à une gamme plus large d'outils de haute qualité, bénéficier d'un support client prioritaire et recevoir un contenu exclusif. Contactez notre équipe de support pour une transition sans problème."
+      "question": "Comment choisir son agence web ?",
+      "answer": "Choisir son agence web doit se faire sur plusieurs critères. D'abord, évaluez leur portfolio pour comprendre le type de projets sur lesquels ils ont travaillé et si leur style correspond à vos attentes. Renseignez-vous sur leur expertise spécifique, comme le SEO ou le e-commerce, si cela est pertinent pour votre projet. La communication est également cruciale : assurez-vous que l'agence est à l'écoute de vos besoins et capable de proposer des solutions adaptées. Enfin, considérez les avis et recommandations d'autres clients pour vous faire une idée de leur fiabilité et de la qualité de leur travail."
     },
     {
-      "question": "Quels sont les rabais disponibles pour les commandes en gros via le plan Boîte à Outils Professionnelle?",
-      "answer": "Les membres de la Boîte à Outils Professionnelle ont droit à des rabais exclusifs sur les commandes en gros, dont le pourcentage peut varier en fonction du volume de la commande. Contactez-nous pour discuter de vos besoins, et nous vous fournirons une structure de rabais personnalisée."
+      "question": "Combien coûte un site internet réalisé par Web Crafters ?",
+      "answer": "Le coût d'un site internet varie considérablement en fonction de plusieurs facteurs, comme la complexité du site, le nombre de pages, les fonctionnalités spécifiques requises (par exemple, une boutique en ligne, un système de réservation), et le niveau de personnalisation. En général, un site vitrine simple peut coûter entre quelques centaines à quelques milliers d'euros, tandis qu'un site e-commerce ou un site sur mesure peut facilement dépasser cette fourchette. Il est important de discuter de votre budget et de vos besoins spécifiques avec l'agence pour obtenir un devis précis."
     },
     {
-      "question": "À quoi puis-je m'attendre en termes de support client?",
-      "answer": "Tous nos clients bénéficient d'un support par e-mail dédié. Avec le Kit de Démarrage, vous recevrez notre support standard, tandis que le plan Boîte à Outils Professionnelle vous mettra à niveau vers un support prioritaire, ce qui signifie des temps de réponse plus rapides et une assistance spécialisée."
+      "question": "Quels sont les services que propose votre agence web ?",
+      "answer": "Notre agence web propose une gamme complète de services pour répondre à tous vos besoins en ligne. Cela inclut la création de sites internet sur mesure, le développement de boutiques en ligne, le référencement SEO pour améliorer votre visibilité en ligne, ainsi que des services de marketing numérique pour augmenter votre trafic et convertir vos visiteurs en clients. Nous offrons également du soutien technique et la maintenance de sites web pour assurer que votre site reste actualisé et performant. Notre équipe d'experts travaille étroitement avec vous à chaque étape pour garantir que le résultat final dépasse vos attentes."
     },
     {
-      "question": "À quelle fréquence sont mises à jour les ressources en ligne et les tutoriels?",
-      "answer": "Nous mettons régulièrement à jour nos ressources en ligne et nos tutoriels pour refléter les dernières tendances en matière de bricolage et de construction, ainsi que les introductions de nouveaux outils et techniques. Notre matériel vise à être complet et convivial pour tous les niveaux de compétence."
-    },
-    {
-      "question": "ScrewFast propose-t-il des services pour les grands projets de construction?",
-      "answer": "Oui, nos Solutions Entreprise sont conçues pour les grandes entreprises ayant besoin de services complets. Nous fournissons des consultations, de la planification et de l'approvisionnement en outils et matériaux de haute qualité, ainsi que des solutions de personnel pour des besoins de construction importants. Contactez-nous pour un devis personnalisé."
+      "question": "Quelle est le rôle d'une agence web ?",
+      "answer": "Le rôle d'une agence web est d'accompagner les entreprises dans leur présence en ligne. Cela commence par la conception et le développement de sites web professionnels, mais s'étend également à l'optimisation de ces sites pour les moteurs de recherche (SEO), la gestion des campagnes publicitaires en ligne, et le développement de stratégies de contenu. Une agence web travaille à améliorer l'image de marque de l'entreprise sur internet, à attirer du trafic ciblé vers son site et à convertir ce trafic en clients. Elle sert d'intermédiaire entre une entreprise et ses clients en ligne, en veillant à ce que le site web soit non seulement esthétique et fonctionnel, mais aussi qu'il réponde aux objectifs commerciaux de l'entreprise."
     }
   ]
 }
