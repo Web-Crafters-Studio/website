@@ -4,7 +4,7 @@ export const SITE = {
   title: "Studio Web Crafters",
   tagline: "Agence web à Saint-Malo",
   description: "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet. Contactez notre équipe d'expert pour convenir d'une réunion de lancement.",
-  description_short: "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet.",
+  description_short: "Web Crafters Studio la nouvelle agence web malouine qui booste votre visibilité et vous aide à vous démarquer sur internet.",
   url: "https://web-crafters.studio",
   author: "Nicolas TOISON",
 };
@@ -19,11 +19,11 @@ export const SEO = {
     "@id": SITE.url,
     url: SITE.url,
     name: SITE.title,
-    description: SITE.description,
+    description: SITE.description_short,
     isPartOf: {
       "@type": "WebSite",
       url: SITE.url,
-      name: SITE.title,
+      name: `${SITE.tagline} |  ${SITE.title}`,
       description: SITE.description,
     },
   },
