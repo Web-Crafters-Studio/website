@@ -12,7 +12,7 @@ export const SITE = {
 export const SEO = {
   title: SITE.title,
   description: SITE.description,
-  structuredData: {
+ /*  structuredData: {
     "@context": "https://schema.org",
     "@type": "WebPage",
     inLanguage: "fr-FR",
@@ -26,7 +26,7 @@ export const SEO = {
       name: SITE.title,
       description: SITE.description,
     },
-  },
+  }, */
 };
 
 export const OG = {
