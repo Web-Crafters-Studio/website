@@ -4,13 +4,13 @@ import FooterSocialLink from "../ui/links/FooterSocialLink.astro";
 import frStrings from "@/utils/navigation.ts";
 import Icon from "../ui/icons/Icon.astro";
 import { SITE } from "@/data_files/constants";
+import NavLink from "../ui/links/NavLink.astro";
 
 // Select the correct translation based on the page's lang prop:
 const strings = frStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = "Nos horaires d'ouverture";
-const sectionThreeContent: string = "Du lundi au vendredi de 9h30 à 18h";
+const showSocials = false;
 const crafted: string = "Fabriqué par";
 const homeUrl = "/";
 ---
@@ -46,11 +46,6 @@ const homeUrl = "/";
                   >
                     {link.name}
                   </a>
-                  {section.section === "Company" && index === 2 ? (
-                    <span class="ms-1 inline rounded-lg bg-[#e14d0b] px-2 py-1 text-xs font-bold text-neutral-50">
-                      We're hiring!
-                    </span>
-                  ) : null}
                 </li>
               ))}
             </ul>
@@ -59,12 +54,6 @@ const homeUrl = "/";
       }
 
       <div class="col-span-2">
-        <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
-          {sectionThreeTitle}
-        </h3>
-        <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-          {sectionThreeContent}
-        </p>
       </div>
     </div>
 
@@ -84,7 +73,7 @@ const homeUrl = "/";
       </div>
 
       <!-- Social Brands -->
-      <div>
+      { showSocials ? <div>
         <FooterSocialLink url={strings.socialLinks.facebook}
           ><Icon name="facebookFooter" />
         </FooterSocialLink>
@@ -100,6 +89,10 @@ const homeUrl = "/";
         <FooterSocialLink url={strings.socialLinks.discord}
           ><Icon name="discordFooter" />
         </FooterSocialLink>
+      </div> : <>}
+      <div>
+        <NavLink url={strings.bottomBarLink.mentionLegal} name="Mentions Légales"></NavLink>
+        <NavLink url={strings.bottomBarLink.confidentialite} name="Politique de confidentialité"></NavLink>
       </div>
     </div>
 

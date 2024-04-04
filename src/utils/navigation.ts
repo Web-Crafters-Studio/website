@@ -9,16 +9,6 @@ const footerLinks = [
       { name: "Référencement naturel (SEO)", url: "#seo" },
     ],
   },
-  {
-    section: "Legal",
-    links: [
-      { name: "Mentions Légales", url: "/mentions-legales" },
-      {
-        name: "Politique de confidentialité",
-        url: "/politique-confidentialite",
-      },
-    ],
-  },
 ];
 // An object of links for social icons
 const socialLinks = {
@@ -29,7 +19,13 @@ const socialLinks = {
   discord: "#",
 };
 
+const bottomBarLink = {
+  mentionLegal: "/mentions-legales",
+  confidentialite: "/politique-confidentialite"
+};
+
 export default {
   footerLinks,
   socialLinks,
+  bottomBarLink
 };
