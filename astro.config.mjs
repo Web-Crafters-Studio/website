@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
+import matomo from "astro-matomo";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,8 +15,8 @@ export default defineConfig({
     defaultLocale: "fr",
     locales: ["fr"],
     routing: {
-      prefixDefaultLocale: false
-    }
+      prefixDefaultLocale: false,
+    },
   },
   prefetch: true,
   integrations: [
@@ -25,10 +26,19 @@ export default defineConfig({
       gzip: false,
       brotli: true,
     }),
+    matomo({
+      enabled: true,
+      host: "https://web-crafters.matomo.cloud/",
+      setCookieDomain: "*.matomo.cloud",
+      siteId: 2,
+      heartBeatTimer: 5,
+      disableCookies: true,
+      debug: false,
+    }),
   ],
   output: "static",
   experimental: {
     clientPrerender: true,
     directRenderScript: true,
-  }
+  },
 });
