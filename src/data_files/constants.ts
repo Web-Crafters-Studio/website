@@ -1,12 +1,12 @@
 import ogImageSrc from "@/images/social.png";
 
 export const SITE = {
-  title: "Studio Web Crafters",
-  tagline: "Agence web à Saint-Malo",
+  title: "Web Crafters",
+  tagline: "Agence web à Saint-Malo et ses alentours",
   description:
-    "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet. Contactez notre équipe d'expert pour convenir d'une réunion de lancement.",
+    "Web Crafters offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet. Contactez nous pour convenir d'une réunion de lancement.",
   description_short:
-    "Web Crafters Studio la nouvelle agence web malouine qui booste votre visibilité et vous aide à vous démarquer sur internet.",
+    "Web Crafters, la nouvelle agence web malouine qui booste votre visibilité et vous aide à vous démarquer sur internet.",
   url: "https://web-crafters.studio",
   author: "Nicolas TOISON",
 };
