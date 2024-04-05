@@ -1,22 +1,22 @@
 [
   {
-    "heading": "Proximité",
-    "content": "Nous savons que chaque entreprise est unique, avec ses propres défis et objectifs. C'est pourquoi nous offrons des solutions sur mesure, adaptées à vos besoins spécifiques, à votre budget et à votre secteur d'activité. Notre équipe d'experts en design UX/UI travaille en étroite collaboration avec vous à chaque étape du processus, garantissant que le résultat final ne soit pas seulement esthétiquement agréable, mais aussi fonctionnellement efficace.",
-    "svg": "locationPin"
-  },
-  {
-    "heading": "Qualité",
-    "content": "Nous savons que chaque entreprise est unique, avec ses propres défis et objectifs. C'est pourquoi nous offrons des solutions sur mesure, adaptées à vos besoins spécifiques, à votre budget et à votre secteur d'activité. Notre équipe d'experts en design UX/UI travaille en étroite collaboration avec vous à chaque étape du processus, garantissant que le résultat final ne soit pas seulement esthétiquement agréable, mais aussi fonctionnellement efficace.",
-    "svg": "verified"
-  },
-  {
     "heading": "Expertise",
-    "content": "Nous savons que chaque entreprise est unique, avec ses propres défis et objectifs. C'est pourquoi nous offrons des solutions sur mesure, adaptées à vos besoins spécifiques, à votre budget et à votre secteur d'activité. Notre équipe d'experts en design UX/UI travaille en étroite collaboration avec vous à chaque étape du processus, garantissant que le résultat final ne soit pas seulement esthétiquement agréable, mais aussi fonctionnellement efficace.",
+    "content": "Notre expertise réside dans une maîtrise totale de l'ensemble de la chaîne de conception d'un projet web : de l'élaboration d'une stratégie numérique, à la création et refonte de site internet, e-commerce ou d'application web",
     "svg": "expertise"
   },
   {
+    "heading": "Qualité",
+    "content": "La qualité chez Web Crafters transcende le simple respect des standards. Chaque projet reflète notre engagement envers l'excellence, assurant satisfaction et dépassement des attentes.",
+    "svg": "verified"
+  },
+  {
+    "heading": "Proximité",
+    "content": "Chez Web Crafters, la proximité n'est pas qu'une valeur, c'est une promesse. Nous tissons des liens étroits avec nos clients, comprenant profondément leurs besoins et visions.",
+    "svg": "locationPin"
+  },
+  {
     "heading": "Personnalisation",
-    "content": "Nous savons que chaque entreprise est unique, avec ses propres défis et objectifs. C'est pourquoi nous offrons des solutions sur mesure, adaptées à vos besoins spécifiques, à votre budget et à votre secteur d'activité. Notre équipe d'experts en design UX/UI travaille en étroite collaboration avec vous à chaque étape du processus, garantissant que le résultat final ne soit pas seulement esthétiquement agréable, mais aussi fonctionnellement efficace.",
+    "content": "La personnalisation est au cœur de notre démarche chez Web Crafters. Nous adaptons nos solutions à chaque projet, garantissant ainsi une réponse unique et sur-mesure à vos besoins.",
     "svg": "design2"
   }
 ]
