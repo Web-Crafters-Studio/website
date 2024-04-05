@@ -53,8 +53,7 @@ const homeUrl = "/";
         ))
       }
 
-      <div class="col-span-2">
-      </div>
+      <div class="col-span-2"></div>
     </div>
 
     <div
@@ -73,33 +72,45 @@ const homeUrl = "/";
       </div>
 
       <!-- Social Brands -->
-      { showSocials ? <div>
-        <FooterSocialLink url={strings.socialLinks.facebook}
-          ><Icon name="facebookFooter" />
-        </FooterSocialLink>
+      {
+        showSocials ? (
+          <div>
+            <FooterSocialLink url={strings.socialLinks.facebook}>
+              <Icon name="facebookFooter" />
+            </FooterSocialLink>
 
-        <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
-        >
+            <FooterSocialLink url={strings.socialLinks.x}>
+              <Icon name="xFooter" />
+            </FooterSocialLink>
 
-        <FooterSocialLink url={strings.socialLinks.github}
-          ><Icon name="githubFooter" />
-        </FooterSocialLink>
+            <FooterSocialLink url={strings.socialLinks.github}>
+              <Icon name="githubFooter" />
+            </FooterSocialLink>
 
-        <FooterSocialLink url={strings.socialLinks.discord}
-          ><Icon name="discordFooter" />
-        </FooterSocialLink>
-      </div> : <>}
+            <FooterSocialLink url={strings.socialLinks.discord}>
+              <Icon name="discordFooter" />
+            </FooterSocialLink>
+          </div>
+        ) : null
+      }
       <div>
-        <NavLink url={strings.bottomBarLink.mentionLegal} name="Mentions Légales"></NavLink>
-        <NavLink url={strings.bottomBarLink.confidentialite} name="Politique de confidentialité"></NavLink>
+        <NavLink
+          url={strings.bottomBarLink.mentionLegal}
+          name="Mentions Légales"
+        />
+        <NavLink
+          url={strings.bottomBarLink.confidentialite}
+          name="Politique de confidentialité"
+        />
       </div>
     </div>
 
     <script>
       const year = new Date().getFullYear();
       const element = document.getElementById("current-year");
-      element!.innerText = year.toString();
+      if (element !== null) {
+        element.innerText = year.toString();
+      }
     </script>
   </div>
 </footer>
