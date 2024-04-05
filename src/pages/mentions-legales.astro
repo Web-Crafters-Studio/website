@@ -1,0 +1,97 @@
+---
+import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+---
+
+<MainLayout
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://web-crafters.studio",
+    url: "https://web-crafters.studio",
+    name: "Agence web à Saint-Malo | Studio Web Crafters",
+    description:
+      "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet. Contactez notre équipe pour convenir d'une réunion de lancement.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://web-crafters.studio",
+      name: "Studio Web Crafters",
+      description:
+        "Web Crafters Studio la nouvelle agence web malouine qui booste votre visibilité et vous aide à vous démarquer sur internet.",
+    },
+    inLanguage: "fr-FR",
+  }}
+  title="Mentions Légales | Studio Web Crafters"
+>
+  <HeroSectionAlt title="Mentions Légale" />
+  <p
+    class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
+  >
+    Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575
+    du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N.,
+    il est porté à la connaissance des utilisateurs et visiteurs, ci-après
+    l""Utilisateur”, du site https://web-crafters.studio/ , ci-après le “Site”,
+    les présentes mentions légales.
+  </p><p
+    class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
+  >
+    La connexion et la navigation sur le Site par l’Utilisateur implique
+    acceptation intégrale et sans réserve des présentes mentions légales.
+  </p>
+
+  <h2
+    class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"
+  >
+    1 - Editeur & Hébergeur.
+  </h2>
+  <p
+    class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
+  >
+    Propriétaire : SASU Bytes Crafting Group au capital social de 1000€ – 10
+    Avenue Anita Conti 35400 Saint-Malo inscrite au RCS Saint-Malo B 984 378 653
+    - Numéro de TVA : FR71984378653<br />
+    Hébergeur : Netlify – 44 Montgomery St STE 300 San Francisco United States -
+    <a href="https://www.netlify.com/support/">Site de support Netlify</a>
+    <br /> Délégué à la protection des données : Nicolas TOISON - nicolas@web-crafters.studio.<br
+    />
+  </p>
+  <h2
+    class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"
+  >
+    2 - Accès au site.
+  </h2>
+  <p
+    class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
+  >
+    Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force
+    majeure, interruption programmée ou non et pouvant découlant d’une nécessité
+    de maintenance. En cas de modification, interruption ou suspension du Site,
+    l’Editeur ne saurait être tenu responsable.
+  </p>
+  <h2
+    class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"
+  >
+    3 - Collecte des données.
+  </h2>
+  <p
+    class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
+  >
+    Le site est exempté de déclaration à la Commission Nationale Informatique et
+    Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant
+    les utilisateurs.
+  </p>
+  <p
+    class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
+  >
+    Toute utilisation, reproduction, diffusion, commercialisation, modification
+    de toute ou partie du Site, sans autorisation de l’Editeur est prohibée et
+    pourra entraînée des actions et poursuites judiciaires telles que notamment
+    prévues par le Code de la propriété intellectuelle et le Code civil.
+  </p>
+  <p class="max-w mb-4 text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg">
+    Pour plus d’informations en matière de protection des données à caractère
+    personnel , se reporter à la Charte en matière de protection des données à
+    caractère personnel du site https://heotienergies.com/ accessible à la
+    rubrique “Politique de confidentialité”
+  </p>
+</MainLayout>

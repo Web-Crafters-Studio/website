@@ -1,0 +1,31 @@
+---
+import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+---
+
+<MainLayout
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://web-crafters.studio",
+    url: "https://web-crafters.studio",
+    name: "Agence web à Saint-Malo | Studio Web Crafters",
+    description:
+      "Web Crafters Studio offre un accompagnement premium aux TPE et PME pour les aider à se démarquer sur internet. Contactez notre équipe pour convenir d'une réunion de lancement.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://web-crafters.studio",
+      name: "Studio Web Crafters",
+      description:
+        "Web Crafters Studio la nouvelle agence web malouine qui booste votre visibilité et vous aide à vous démarquer sur internet.",
+    },
+    inLanguage: "fr-FR",
+  }}
+>
+  <HeroSectionAlt
+    title="Formulaire envoyé avec succès"
+    subTitle="Votre demande a bien été reçue suite à la soumission du formulaire de contact sur notre site. Nous apprécions le temps que vous avez consacré à cette démarche. Nous prendrons contact avec vous dans les meilleurs délais."
+    url="/"
+    btnTitle="Retour à l'accueil"
+  />
+</MainLayout>
