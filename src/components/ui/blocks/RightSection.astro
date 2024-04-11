@@ -48,7 +48,7 @@ interface Props {
     <Fragment set:html={subTitle} />
     </p>
     <!-- Conditional rendering of the Primary Call-To-Action button if 'btnExists' is true -->
-    {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
+    {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} noPhone/> : null}
   </div>
   <!-- Conditionally render one or two images based on 'single' property -->
   {

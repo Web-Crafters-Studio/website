@@ -55,7 +55,7 @@ interface Props {
     }
     <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
     <div class="mt-7 grid w-full gap-3 sm:inline-flex">
-      {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
+      {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} noPhone/>}
       {
         secondaryBtn && (
           <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />
