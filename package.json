@@ -13,7 +13,7 @@
     "@astrojs/check": "^0.5.10",
     "@astrojs/sitemap": "^3.1.2",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.5.12",
+    "astro": "^4.8.6",
     "astro-compressor": "^0.4.1",
     "globby": "^14.0.1",
     "preline": "^2.0.3",
